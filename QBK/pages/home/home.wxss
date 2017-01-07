@@ -1,0 +1,6 @@
+/* pages/home/home.wxss */
+.personal {
+    height:20rpx;
+    background-color:red;
+    display:flex;
+}

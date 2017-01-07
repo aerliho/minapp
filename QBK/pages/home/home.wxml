@@ -1,10 +1,12 @@
-<!--index.wxml-->
+<!--home.wxml-->
 <view class="container">
-  <view  bindtap="bindViewTap" class="userinfo">
-    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
-    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+  <view class="personal">
+    <icon type="waiting"></icon>
   </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
+  <text>123</text>
+  <view class="flex-wrp" style="height: 300px;flex-direction:column;">
+      <view class="flex-item bc_green">1</view>
+      <view class="flex-item bc_red">2</view>
+      <view class="flex-item bc_blue">3</view>
   </view>
 </view>

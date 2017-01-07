@@ -1,6 +1,32 @@
 <!--logs.wxml-->
+<!--是否显示圆点，自动播放， 间隔时间， 监听滚动和点击事件-->
+<swiper indicator-dots="true" autoplay="true" duration="1000" bindchange="listenSwiper" >
+<!--swiper-item只能包含一个节点再多会自动删除-->
+    <swiper-item>
+        <view style="background: red; height: 150px"></view>
+    </swiper-item>
+    <swiper-item>
+         <view style="background: green; height: 150px"></view>
+    </swiper-item>
+        <swiper-item>
+          <view style="background: blue; height: 150px"></view>
+    </swiper-item>    
+</swiper>
 <view class="container log-list">
+<scroll-view scroll-x="true" style=" white-space: nowrap; display: flex" >
+<!--  display: inline-block-->
+  <view style="background: red; width: 200px; height: 100px; display: inline-block" ></view>
+  <view style="background: green; width: 200px; height: 100px; display: inline-block"></view>
+  <view style="background: blue; width: 200px; height: 100px; display: inline-block"></view>
+  <view style="background: yellow; width: 200px; height: 100px; display: inline-block"></view>
+</scroll-view>
   <block wx:for="{{logs}}" wx:for-item="log" wx:key="*this">
     <text class="log-item">{{index + 1}}. {{log}}</text>
   </block>
+  <scroll-view scroll-y="true" style="height: 200px">
+      <view style="background: red; width: 100px; height: 100px" ></view>
+      <view style="background: green; width: 100px; height: 100px"></view>
+      <view style="background: blue; width: 100px; height: 100px"></view>
+      <view style="background: yellow; width: 100px; height: 100px"></view>
+  </scroll-view>
 </view>

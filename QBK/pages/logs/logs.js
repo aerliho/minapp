@@ -4,6 +4,10 @@ Page({
   data: {
     logs: []
   },
+  listenSwiper:function(e) {
+      //打印信息
+      console.log(e)
+  },
   onLoad: function () {
     this.setData({
       logs: (wx.getStorageSync('logs') || []).map(function (log) {

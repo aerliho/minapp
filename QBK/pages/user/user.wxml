@@ -1,0 +1,39 @@
+<view style="container">
+    <view class="username">
+        <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+        <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </view>
+
+  <view class="flex-wrp" style="flex-direction:column;">
+      <view class="flex-item" style="">
+        <image src="../../image/record.png"></image>
+        我的账单
+        <image class="enter" src="../../image/enter.png"></image>
+      </view>
+      <view class="flex-item">
+      <image src="../../image/source.png"></image>
+        我的积分
+        <image class="enter" src="../../image/enter.png"></image>
+      </view>
+      <view class="flex-item">
+      <image src="../../image/card.png"></image>
+        银行卡管理
+        <image class="enter" src="../../image/enter.png"></image>
+      </view>
+      <view class="flex-item">
+      <image src="../../image/option.png"></image>
+        我的反馈
+        <image class="enter" src="../../image/enter.png"></image>
+      </view>
+      <view class="flex-item">
+      <image src="../../image/phone.png"></image>
+        联系我们
+        <image class="enter" src="../../image/enter.png"></image>
+      </view>
+      <view class="flex-item">
+      <image src="../../image/set.png"></image>
+        设置
+        <image class="enter" src="../../image/enter.png"></image>
+      </view>
+  </view>
+</view>

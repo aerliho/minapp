@@ -1,0 +1,60 @@
+.container {
+    background-color: gainsboro;
+}
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin-left:42%;
+  margin-top:10%;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+  margin-left:42%;
+  margin-top:10%;
+}
+
+.usermotto {
+  margin-top: 200px;
+}
+.username {
+    background-color: blue;
+    height: 180px;
+}
+.userImage {
+    height: 80rpx;
+}
+.flex-wrp {
+    margin-top: 40rpx;
+}
+.flex-item {
+    height: 2.5rem;
+    opacity: 0.5;
+    color: black;
+    flex-direction:row;
+    border: 1rpx solid gray;
+    margin-top: 1rpx;
+    width: 94%;
+    margin-left: 3%;
+    line-height: 2.5;
+    border-radius:15rpx;
+}
+.flex-item image {
+    position:relative;
+    top:10rpx;
+    width:20px;
+    height:20px;
+    left:4px;
+}
+.flex-item .enter {
+    float: right;
+    margin-right:15px;
+    margin-top:8px;
+}
