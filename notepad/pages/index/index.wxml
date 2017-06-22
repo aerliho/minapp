@@ -1,0 +1,43 @@
+<!--index.wxml-->
+<view class="container">
+    <view class="body-view">
+         <loading hidden="{{hidden}}" bindchange="loadingChange">
+             加载中...
+         </loading>
+     </view>
+    <view class="search__top">
+      <form class="search__form" bindsubmit="searchSubmit">
+        <input value="{{search.searchValue}}" placeholder="请输入关键字" class="search__input" bindfocus="focusSearch" bindinput="searchActiveChangeinput" auto-focus="true" name="teamSearchKeyWords" />
+        <view class="search__icon search__active" style="width:40rpx;">
+          <icon type="search" size="13" color="#888" style="float:left;margin-right:20rpx;"></icon>
+        </view>
+        <button wx:if="{{search.showClearBtn}}" catchtap="searchActiveChangeclear" form-type="reset" style="background:none;position:absolute;border:none;right:0;top:0;bottom:0;width:80rpx;">
+          <icon type="clear" size="19" color="#aaa" style="position:absolute;right:15rpx;top:10rpx;z-index:3;"></icon>
+        </button>
+      </form>
+    </view>
+
+    <view class="news-item-container">
+      <navigator url="../detail/detail?id={{item.id}}" wx:for="{{list}}" wx:for-index="id">
+          <view class="news-item" >
+            <view class="news-item-left">
+              <text class="news-item-title">{{item.title}}</text>
+            </view>
+            <view class="news-item-right">
+              <image src="{{item.images[0]}}" class="news-image"/>
+            </view>
+          </view>
+      </navigator>
+    </view>
+</view>
+
+<!--
+  <view  bindtap="bindViewTap" class="userinfo">
+    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+  </view>
+  <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  </view>
+</view>
+-->

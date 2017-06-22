@@ -1,0 +1,40 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/mine/mine",
+    "pages/note/note"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#20a0ff",
+    "navigationBarTitleText": "记事本",
+    "navigationBarTextStyle":"black",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "color": "#a9b7b7",
+    "selectedColor": "pink",
+    "borderStyle": "black",
+    "list": [
+      {
+        "selectedIconPath": "resource/image/home_selected.png",
+        "iconPath": "resource/image/home.png",
+        "pagePath": "pages/index/index",
+        "text": "最近"
+      },
+      {
+        "selectedIconPath": "resource/image/recently_selected.png",
+        "iconPath": "resource/image/recently.png",
+        "pagePath": "pages/logs/logs",
+        "text": "分类"
+      },
+      {
+        "selectedIconPath": "resource/image/mine_selected.png",
+        "iconPath": "resource/image/mine.png",
+        "pagePath": "pages/mine/mine",
+        "text": "我的"
+      }
+    ]
+  }
+}
